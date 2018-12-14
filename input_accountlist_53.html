@@ -1,0 +1,98 @@
+<table width="100%" bordercolor="#000000" border="0" class="ke-zeroborder">
+    <tbody>
+    <tr>
+        <td height="34" width="15%" align="right" class="ys1">QQ群名：<br/></td>
+        <td class="ys2" width="35%"><input onclick="" value=""  class="inputs"   name="nickname"><br/></td>
+        <td align="right" class="ys1" width="15%">群主昵称：<br/></td>
+        <td class="ys2" width="35%"><input onclick="" value="" class="inputs"   name="owner_nickname"><br/></td>
+    </tr>
+    <tr>
+        <td height="34" width="15%" align="right" class="ys1">创建人昵称:<br/></td>
+        <td class="ys2" width="35%"><input onclick="" value=""  class="inputs"  name="create_nickname"><br/></td>
+        <td align="right" class="ys1" width="15%">*群主QQ号：<br/></td>
+        <td class="ys2" width="35%"><input onclick="" value="" onblur="c.inputblur(this, 0)" class="inputs"  name="qq_group_num"  required="required"><br/></td>
+    </tr>
+    <tr>
+        <td height="34" width="15%" align="right" class="ys1"><span>*</span>创建人QQ号<br/></td>
+        <td class="ys2" width="35%"><input onclick="" value="" onblur="c.inputblur(this, 0)" class="inputs"  name="username"  required="required"><br/></td>
+        <td align="right" class="ys1" width="15%"><span>*</span>群状态:<br/></td>
+        <td class="ys2" width="35%">
+            <input type="radio" id="genderChoice1" name="group_status"  value="1" checked="checked">
+            <label for="genderChoice1">启用</label>
+            <input type="radio" id="genderChoice2" name="group_status" value="0">
+            <label for="genderChoice2">禁用</label>
+        </td>
+    </tr>
+    <tr>
+        <td height="34" width="15%" align="right" class="ys1"><span>*</span>群类型<br/></td>
+        <td class="" width="35%">
+           <span id="div_is_set" class="divinput">
+                <select style="width:99%;" onchange="c.inputblur(this, 0)" name="group_type" class="inputs" required="required">
+                    <option value="">-请选择-</option>
+                    <option value="1" selected="">外部群</option>
+                    <option value="2">会员群</option>
+                    <option value="3">核心群</option>
+                </select>
+            </span>
+        </td>
+        <td align="right" class="ys1" width="15%" style="display: none">*登陆密码<br/></td>
+        <td class="ys2" width="35%" style="display: none">
+            <span id="div_password" class="divinput"><input class="inputs" type="text" value="123456" onblur="c.inputblur(this, 0)" name="password"></span>
+            <br/>
+        </td>
+    </tr>
+    <tr style="display: none">
+        <td height="34" width="15%" align="right" class="ys1"><span>*</span>类别<br/></td>
+        <td class="ys2" width="35%">
+            <select style="width:99%;" name="type_id"  onblur="c.inputblur(this, 0)" class="inputs">
+                <option  value="1" selected="selected">-请选择-</option>
+            </select>
+
+            <br/></td>
+        <td height="34" width="15%" align="right" class="ys1">*账号设置<br/></td>
+        <td class="ys2" width="35%">
+            <span id="div_is_set1" class="divinput">
+                <select style="width:99%;" onchange="c.inputblur(this, 0)" name="is_set" class="inputs">
+                    <option value="1" selected="">外部群</option>
+                </select>
+            </span>
+            <br/></td>
+    </tr>
+    <tr style="display: none">
+        <td height="34" width="15%" align="right" class="ys1">*账号状态<br/></td>
+        <td class="ys2" width="35%">
+            <span id="div_status" class="divinput">
+                <select style="width:99%;" onchange="c.inputblur(this, 0)" name="status" class="inputs">
+                    <option value="-1" selected="selected">-请选择-</option>
+                </select></span>
+            <br/></td>
+        <td align="right" class="ys1" width="15%">*分配状态<br/></td>
+        <td class="ys2" width="35%">
+            <span id="div_allot_status" class="divinput">
+                <select style="width:99%;" onchange="c.inputblur(this, 0)" name="allot_status" class="inputs">
+                    <option value="-1" selected="selected">-请选择-</option>
+                </select></span>
+
+            <br/></td>
+    </tr>
+    <tr style="display: none">
+        <td align="right" class="ys1" width="15%">*账号类型<br/></td>
+        <td class="ys2" width="35%">
+            <span id="div_cate_id" class="divinput">
+                <select style="width:99%;" onchange="c.inputblur(this, 0)" name="cate_id" class="inputs">
+                    <option value="35" selected="selected">-请选择-</option>
+                </select>
+            </span>
+
+        </td>
+    </tr>
+    <tr>
+        <td height="34" align="right" class="ys1">备注:</td>
+        <td colspan="3" class="ys2">
+            <span id="div_explain" class="divinput"><textarea class="textarea" style="height:80px;" name="mark"></textarea></span>
+        </td>
+        {field_list_html}
+        <input type="hidden" name="accountlist_53" value="53" />
+    </tr>
+    </tbody>
+</table>
